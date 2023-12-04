@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Add New Player</title>
+  <!-- Add any necessary styles or link to a CSS file -->
+  <style>
+    /* Example styles for the form */
+    .form-container {
+      width: 300px;
+      margin: 20px auto;
+    }
+    .form-container label {
+      display: block;
+      margin-bottom: 5px;
+    }
+    .form-container input[type="text"],
+    .form-container input[type="number"] {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    .form-container input[type="submit"] {
+      padding: 8px 20px;
+      border: none;
+      border-radius: 5px;
+      background-color: #4caf50;
+      color: white;
+      cursor: pointer;
+    }
+    .form-container input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <div class="form-container">
+    <h2>Add New Player</h2>
+    <form id="addPlayerForm">
+      <label for="playerName">Player Name:</label>
+      <input type="text" id="playerNameInput" required>
+
+      <label for="team">Team:</label>
+      <input type="text" id="teamInput" required>
+
+      <label for="price">Price:</label>
+      <input type="number" id="priceInput" required>
+
+      <label for="isPlaying">Is Playing:</label>
+      <input type="checkbox" id="isPlayingInput" checked>
+
+      <label for="description">Description:</label>
+      <input type="text" id="descriptionInput" required>
+      <p>Please type only Batsman or All-rounder</p>
+
+      <input type="submit" value="Add Player">
+    </form>
+  </div>
+
+  <!-- Add your JavaScript file reference here -->
+  <script src="assets/vendor/jquery/jquery.min.js"></script>
+  <script src="assets/js/data.js"></script>
+</body>
+</html>
